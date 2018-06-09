@@ -1,23 +1,30 @@
 html {
   font-family: "Avenir", sans-serif;
+  font-size: 16px;
 }
 .container {
   display: flex;
 }
+.banner {
+  top: 4rem;
+  position: relative;
+}
 
+/*Header*/
 
+header {
+  position: fixed;
+  width: 100%
+  height: 4rem;
+}
+header .content {
+  display: flex;
+}
+.logo {
 
+}
+nav ul {
+  display: flex;
+  margin: auto 8px;
 
-
-
-@media only screen and (max-width: 760px) {
-  header {
-    position: fixed;
-  }
-
-  nav li {
-    list-style: none;
-    display: inline;
-    color: green;
-  }
 }
