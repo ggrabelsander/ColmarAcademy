@@ -71,6 +71,7 @@ header .content {
   margin: auto 24px;
   width: 40%;
   color: #4d4d4d;
+  height: 100%;
 }
 .banner-content h1 {
   font-size: 3.5rem;
@@ -81,6 +82,7 @@ header .content {
   font-size: 2rem;
   font-weight: 600;
   padding: 1rem 0;
+
 
 }
 .button {
@@ -94,5 +96,36 @@ header .content {
 }
 .button span {
   font-size: 1.5rem;
-  
+}
+
+/*News Banner*/
+.news-banner {
+  display: flex;
+  position: relative;
+  top: 4rem;
+}
+.news-banner .left {
+  max-width: 60%;
+  padding-right: 1.5rem;
+}
+.news-banner img {
+  width: 100%;
+  padding: 2.5rem 2rem;
+  display: block;
+}
+.news-banner .right {
+  display: flex;
+  flex-direction: column;
+  max-width: 40%;
+}
+.right .story {
+  display: flex;
+  width: 100%;
+}
+.story img {
+  width: 35%;
+  height: auto;
+}
+.story-content {
+  width: 65%;
 }
