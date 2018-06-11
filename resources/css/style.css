@@ -14,36 +14,85 @@ html {
 
 header {
   position: fixed;
-  width: 100%
+  width: 100%;
   height: 4rem;
+  z-index: 1;
+  background-color: white;
 }
 header .content {
   display: flex;
+  justify-content: space-between;
+  width: 100%;
+  align-items: center;
+  height: 100%;
 }
 .logo {
-
+  display: flex;
+  height: 2rem;
+  align-items: center;
+  text-transform: uppercase;
+  padding-left: 1.5rem;
 }
-nav ul {
+.logo-name {
+  display: flex;
+}
+.logo-name h3:first-child {
+  font-weight: bold;
+  color: #4d4d4d;
+}
+.logo-name h3:last-child {
+  color: #a6a6a6;
+}
+.nav {
+  margin: 1rem 1.5rem;
+}
+.nav ul {
   display: flex;
   margin: auto 8px;
-
+}
+.nav a {
+  padding-left: 1rem;
+  color: #4d4d4d;
+  text-decoration: none;
 }
 
 /*Banner*/
 
 .banner {
   display: flex;
+  background-color: lightgrey;
 }
-
 .banner img {
   width: 60%;
-  margin: 32px 24px;
+  margin: 2.5rem 2rem;
+
+}
+.banner-content {
+  margin: auto 24px;
+  width: 40%;
+  color: #4d4d4d;
+}
+.banner-content h1 {
+  font-size: 3.5rem;
+  font-weight: 700;
+  padding: 1rem 0;
+}
+.banner-content h3 {
+  font-size: 2rem;
+  font-weight: 600;
+  padding: 1rem 0;
+
 }
 .button {
-  background-color: darkgrey;
+  background-color: #4d4d4d;
   color: white;
   text-align: center;
-  padding: 8px auto;
-  height: 24px;
-  margin: auto 0;
+  height: 100%;
+  margin: 1rem 0;
+  width: 90%;
+  padding: 8px;
+}
+.button span {
+  font-size: 1.5rem;
+  
 }
