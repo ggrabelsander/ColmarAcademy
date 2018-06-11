@@ -64,8 +64,8 @@ header .content {
 }
 .banner img {
   width: 60%;
-  margin: 2.5rem 2rem;
-
+  margin: 2rem 1.5rem;
+  height: auto;
 }
 .banner-content {
   margin: auto 24px;
@@ -82,7 +82,6 @@ header .content {
   font-size: 2rem;
   font-weight: 600;
   padding: 1rem 0;
-
 
 }
 .button {
@@ -103,29 +102,57 @@ header .content {
   display: flex;
   position: relative;
   top: 4rem;
+  justify-content: space-between;
+  color: #4d4d4d;
+  height: 735px;
 }
 .news-banner .left {
   max-width: 60%;
-  padding-right: 1.5rem;
+  padding-right: 24px;
+  margin: 2rem 1.5rem;
 }
-.news-banner img {
+.news-banner .left img {
   width: 100%;
-  padding: 2.5rem 2rem;
   display: block;
+  overflow: hidden;
+}
+.news-banner .left h1 {
+  font-size: 3rem;
+  font-weight: bold;
+  margin: 24px auto;
+}
+.news-banner .left h3 {
+  font-size: 1.4rem;
+}
+.news-banner .left h4 {
+  font-size: 1.25rem;
+  margin: 32px auto;
 }
 .news-banner .right {
   display: flex;
   flex-direction: column;
   max-width: 40%;
+  margin: 32px 16px;
 }
+
 .right .story {
   display: flex;
   width: 100%;
+  border-bottom: solid lightgrey 1px;
+
+
 }
-.story img {
-  width: 35%;
+.right .story:last-child {
+  background-color: lightgrey;
+  margin-bottom: 32px;
+}
+}
+.right .story img {
+  max-width: 35%;
   height: auto;
+
 }
 .story-content {
   width: 65%;
+  margin: auto 0;
 }
