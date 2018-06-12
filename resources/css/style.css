@@ -104,7 +104,7 @@ header .content {
   top: 4rem;
   justify-content: space-between;
   color: #4d4d4d;
-  height: 735px;
+
 }
 .news-banner .left {
   max-width: 60%;
@@ -132,27 +132,38 @@ header .content {
   display: flex;
   flex-direction: column;
   max-width: 40%;
-  margin: 32px 16px;
+  height: 750px;
+  border-left: solid lightgrey 1px;
 }
 
 .right .story {
   display: flex;
   width: 100%;
   border-bottom: solid lightgrey 1px;
-
-
+  padding: 16px;
+  line-height: 1.2;
 }
 .right .story:last-child {
   background-color: lightgrey;
   margin-bottom: 32px;
 }
-}
+
 .right .story img {
   max-width: 35%;
   height: auto;
-
+  margin: 16px;
 }
 .story-content {
   width: 65%;
   margin: auto 0;
+}
+.story-content h3 {
+  font-weight: 700;
+  font-size: 1.5rem;
+}
+
+/*Courses Section*/
+.courses {
+  display: flex;
+  overflow: wrap;
 }
