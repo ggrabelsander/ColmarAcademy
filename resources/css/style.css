@@ -142,7 +142,7 @@ header .content {
 
 .right .story {
   display: flex;
-  width: 100%;
+
   border-bottom: solid lightgrey 1px;
   padding: 16px;
   line-height: 1.2;
@@ -151,14 +151,13 @@ header .content {
   background-color: lightgrey;
   margin-bottom: 32px;
 }
-
 .right .story img {
   max-width: 35%;
   height: auto;
   margin: 16px;
 }
 .story-content {
-  width: 65%;
+  max-width: 65%;
   margin: auto 0;
 }
 .story-content h3 {
@@ -170,11 +169,14 @@ header .content {
 .course-banner {
   background-color: #f2f2f2;
   width: 100%;
+  position: relative;
+  top: 32px;
 }
 .course-banner h1 {
   font-size: 2rem;
   text-align: center;
   font-weight: bold;
+  padding-top: 32px;
 }
 .courses {
   display: flex;
@@ -184,7 +186,7 @@ header .content {
 .course {
   width: 25%;
   height: auto;
-  margin: 10px;
+  margin: 32px;
   background-color: white;
 }
 .course img {
@@ -192,4 +194,47 @@ header .content {
 }
 .course .course-content {
   margin: 16px;
+  line-height: 1.5;
+}
+.course-content h3 {
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+.course-content h4 {
+  font-size: 1.25rem;
+  color: grey;
+  font-weight: lighter;
+
+}
+
+/*Thesis section*/
+.thesis-banner {
+  width: 100%;
+  position: relative;
+  top: 32px;
+}
+.thesis-banner h1 {
+  font-size: 2rem;
+  text-align: center;
+  font-weight: bold;
+  padding-top: 32px;
+}
+.thesis-content {
+  display: flex;
+  padding: 32px 5px;
+}
+.thesis-video video {
+  padding: 24px;
+}
+.video-content {
+  padding-left: 24px;
+}
+.video-content h2 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  padding-bottom: 8px;
+}
+.video-content h4 {
+  font-weight: lighter;
+  font-size: 1.1rem;
 }
