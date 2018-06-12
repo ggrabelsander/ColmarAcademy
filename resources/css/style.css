@@ -2,6 +2,9 @@ html {
   font-family: "Avenir", sans-serif;
   font-size: 16px;
 }
+body {
+    color: #4d4d4d;
+}
 .container {
   display: flex;
 }
@@ -104,6 +107,7 @@ header .content {
   top: 4rem;
   justify-content: space-between;
   color: #4d4d4d;
+  width: 100%;
 
 }
 .news-banner .left {
@@ -131,7 +135,7 @@ header .content {
 .news-banner .right {
   display: flex;
   flex-direction: column;
-  max-width: 40%;
+  max-width: 35%;
   height: 750px;
   border-left: solid lightgrey 1px;
 }
@@ -163,7 +167,29 @@ header .content {
 }
 
 /*Courses Section*/
+.course-banner {
+  background-color: #f2f2f2;
+  width: 100%;
+}
+.course-banner h1 {
+  font-size: 2rem;
+  text-align: center;
+  font-weight: bold;
+}
 .courses {
   display: flex;
-  overflow: wrap;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.course {
+  width: 25%;
+  height: auto;
+  margin: 10px;
+  background-color: white;
+}
+.course img {
+  width: 100%;
+}
+.course .course-content {
+  margin: 16px;
 }
