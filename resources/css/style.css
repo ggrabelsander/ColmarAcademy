@@ -58,14 +58,16 @@ header .content {
   font-weight: bold;
   transition: font 100ms linear 100ms;
 }
-@media only screen and (max-width:490px) {
+@media only screen and (max-width:650px) {
   header .mobile{
     height: 64px;
     display: contents;
     display: flex;
     justify-content: space-between;
+    align-items: center;
     width: 100%;
   }
+
   header .desktop {
     display: none;
   }
@@ -120,17 +122,25 @@ header .content {
   color: tan;
   transition: color 100ms ease-in-out 100ms;
 }
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 650px) {
   .banner {
     flex-direction: column;
     justify-content: center;
-    width: 480px;
+    align-content: center;
+    width: 100%;
   }
   .banner img{
     width: 90%;
   }
   .banner-content {
     margin: 32px 16px;
+    width: 100%;
+  }
+  .banner-content h1 {
+    font-size: 2rem;
+  }
+  .banner-content h3 {
+    font-size: 1.5rem;
   }
 
 /*News Banner*/
