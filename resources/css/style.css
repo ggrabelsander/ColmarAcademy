@@ -1,16 +1,10 @@
 html {
-  font-family: "Avenir", sans-serif;
+  font-family: '', sans-serif;
   font-size: 16px;
+  letter-spacing: .05em;
 }
 body {
     color: #4d4d4d;
-}
-.container {
-  display: flex;
-}
-.banner {
-  top: 4rem;
-  position: relative;
 }
 
 /*Header*/
@@ -58,10 +52,16 @@ header .content {
   color: #4d4d4d;
   text-decoration: none;
 }
+.nav a:hover {
+  font-weight: bold;
+  transition: font 100ms linear 100ms;
+}
 
 /*Banner*/
 
 .banner {
+  position: relative;
+  top: 4rem;
   display: flex;
   background-color: lightgrey;
 }
@@ -69,6 +69,7 @@ header .content {
   width: 60%;
   margin: 2rem 1.5rem;
   height: auto;
+  object-fit: cover;
 }
 .banner-content {
   margin: auto 24px;
@@ -83,7 +84,7 @@ header .content {
 }
 .banner-content h3 {
   font-size: 2rem;
-  font-weight: 600;
+  font-weight: 400;
   padding: 1rem 0;
 
 }
@@ -96,8 +97,14 @@ header .content {
   width: 90%;
   padding: 8px;
 }
-.button span {
+.button a {
   font-size: 1.5rem;
+  color: white;
+  text-decoration: none;
+}
+.button a:hover {
+  color: tan;
+  transition: color 100ms ease-in-out 100ms;
 }
 
 /*News Banner*/
@@ -127,6 +134,8 @@ header .content {
 }
 .news-banner .left h3 {
   font-size: 1.4rem;
+  line-height: 1.2;
+  font-weight: 100;
 }
 .news-banner .left h4 {
   font-size: 1.25rem;
@@ -142,7 +151,6 @@ header .content {
 
 .right .story {
   display: flex;
-
   border-bottom: solid lightgrey 1px;
   padding: 16px;
   line-height: 1.2;
@@ -164,7 +172,10 @@ header .content {
   font-weight: 700;
   font-size: 1.5rem;
 }
-
+.story-content a:hover {
+  font-weight: bold;
+  transition: font 100ms linear 100ms;
+}
 /*Courses Section*/
 .course-banner {
   background-color: #f2f2f2;
@@ -194,7 +205,7 @@ header .content {
 }
 .course .course-content {
   margin: 16px;
-  line-height: 1.5;
+  line-height: 1.8;
 }
 .course-content h3 {
   font-weight: bold;
