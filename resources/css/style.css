@@ -1,5 +1,5 @@
 html {
-  font-family: '', sans-serif;
+  font-family: 'Heebo', sans-serif;
   font-size: 16px;
   letter-spacing: .05em;
 }
@@ -15,6 +15,9 @@ header {
   height: 4rem;
   z-index: 1;
   background-color: white;
+}
+header .mobile {
+  display: none;
 }
 header .content {
   display: flex;
@@ -54,6 +57,17 @@ header .content {
 .nav a:hover {
   font-weight: bold;
   transition: font 100ms linear 100ms;
+}
+@media only screen and (max-width:480px) {
+  header .mobile{
+    height: 64px;
+    display: contents;
+    display: flex;
+    justify-content: space-between;
+  }
+  header .desktop {
+    display: none;
+  }
 }
 
 /*Banner*/
@@ -104,6 +118,16 @@ header .content {
 .button a:hover {
   color: tan;
   transition: color 100ms ease-in-out 100ms;
+}
+@media only screen and (max-width: 480px) {
+  .banner {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+  .banner img{
+    width: 90%;
+  }
 }
 
 /*News Banner*/
@@ -174,6 +198,15 @@ header .content {
   font-weight: bold;
   transition: font 100ms linear 100ms;
 }
+@media only screen and (max-width: 480px) {
+  .news-banner .left {
+    display: none;
+  }
+}
+
+
+
+
 /*Courses Section*/
 .course-banner {
   background-color: #f2f2f2;
