@@ -148,7 +148,6 @@ header .content {
   height: 750px;
   border-left: solid lightgrey 1px;
 }
-
 .right .story {
   display: flex;
   border-bottom: solid lightgrey 1px;
@@ -230,22 +229,57 @@ header .content {
   font-weight: bold;
   padding-top: 32px;
 }
-.thesis-content {
+.thesis-info {
   display: flex;
   padding: 32px 5px;
 }
-.thesis-video video {
+.thesis-left {
+  width: 60%;
+}
+.thesis-left video {
+  padding: 0px 24px;
+  width: 95%;
+}
+.video-caption {
   padding: 24px;
+  line-height: 1.2;
 }
-.video-content {
-  padding-left: 24px;
-}
-.video-content h2 {
+.video-caption h2 {
   font-size: 1.5rem;
   font-weight: bold;
   padding-bottom: 8px;
 }
-.video-content h4 {
+.video-caption h4 {
   font-weight: lighter;
   font-size: 1.1rem;
+}
+.thesis-right {
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+  height: 500px;
+}
+.thesis-story:first-child {
+  background: #f2f2f2;
+}
+.thesis-story {
+  display: flex;
+}
+.thesis-story img {
+  width: 35%;
+  height: auto;
+  padding: 16px;
+}
+.thesis-content {
+  margin: auto 0;
+  line-height: 1.2;
+}
+.thesis-content h2 {
+  font-size: 1.6rem;
+  font-weight: 500;
+}
+.thesis-content h3 {
+  font-size: 1.2rem;
+  font-weight: 100;
+  padding-top: 1rem;
 }
