@@ -58,7 +58,7 @@ header .content {
   font-weight: bold;
   transition: font 100ms linear 100ms;
 }
-@media only screen and (max-width:460px) {
+@media only screen and (max-width:600px) {
   header .mobile{
     height: 64px;
     display: contents;
@@ -122,15 +122,16 @@ header .content {
   color: tan;
   transition: color 100ms ease-in-out 100ms;
 }
-@media only screen and (max-width: 450px) {
+@media only screen and (max-width: 600px) {
   .banner {
     flex-direction: column;
     justify-content: center;
     align-content: center;
     width: 100%;
   }
-  .banner img{
-    width: 90%;
+  .banner img {
+    width: 100%;
+    margin: 0 auto;
   }
   .banner-content {
     margin: 32px 16px;
@@ -138,83 +139,82 @@ header .content {
   }
   .banner-content h1 {
     font-size: 2rem;
-    marigin
+
   }
   .banner-content h3 {
     font-size: 1.5rem;
   }
-
-/*News Banner*/
-@media only screen and (max-width:1600px){
-  .news-banner {
-    margin-top: 32px;
-    display: flex;
-    color: #4d4d4d;
-    width: 100%;
-  }
-  .news-banner .left {
-    width: 60%;
-
-  }
-  .news-banner .left img {
-    width: 100%;
-    display: block;
-    overflow: hidden;
-    padding: 32px 24px;
-  }
-  .news-banner .left h1 {
-    font-size: 3rem;
-    font-weight: bold;
-    margin: 24px auto;
-  }
-  .news-banner .left h3 {
-    font-size: 1.4rem;
-    line-height: 1.2;
-    font-weight: 100;
-  }
-  .news-banner .left h4 {
-    font-size: 1.25rem;
-    margin: 32px auto;
-  }
-  .news-banner .right {
-    display: flex;
-    flex-direction: column;
-    max-width: 35%;
-    height: 750px;
-    border-left: solid lightgrey 1px;
-  }
-  .right .story {
-    display: flex;
-    border-bottom: solid lightgrey 1px;
-    padding: 16px;
-    line-height: 1.2;
-  }
-  .right .story:last-child {
-    background-color: lightgrey;
-    margin-bottom: 32px;
-  }
-  .right .story img {
-    max-width: 35%;
-    height: auto;
-    margin: 16px;
-  }
-  .story-content {
-    max-width: 65%;
-    margin: auto 0;
-  }
-  .story-content h3 {
-    font-weight: 700;
-    font-size: 1.5rem;
-  }
-  .story-content a:hover {
-    font-weight: bold;
-    transition: font 100ms linear 100ms;
-  }
 }
-
-@media only screen and (max-width: 450px) {
+/*News Banner*/
+.news-banner {
+  margin-top: 32px;
+  display: flex;
+  position: relative;
+  top: 2rem;
+  color: #4d4d4d;
+  justify-content: space-between;
+}
+.news-banner .left {
+  max-width: 60%;
+}
+.left img {
+  width: 100%;
+  display: block;
+  padding: 32px 24px;
+  overflow: hidden;
+}
+.left h1 {
+  font-size: 3rem;
+  font-weight: bold;
+  margin: 24px auto;
+}
+.news-banner .left h3 {
+  font-size: 1.4rem;
+  line-height: 1.2;
+  font-weight: 100;
+}
+.news-banner .left h4 {
+  font-size: 1.25rem;
+  margin: 32px auto;
+}
+.news-banner .right {
+  display: flex;
+  flex-direction: column;
+  max-width: 35%;
+  height: 750px;
+  border-left: solid lightgrey 1px;
+}
+.right .story {
+  display: flex;
+  border-bottom: solid lightgrey 1px;
+  padding: 16px;
+  line-height: 1.2;
+}
+.right .story:last-child {
+  background-color: lightgrey;
+  margin-bottom: 32px;
+}
+.right .story img {
+  max-width: 35%;
+  height: auto;
+  margin: 16px;
+}
+.story-content {
+  max-width: 65%;
+  margin: auto 0;
+}
+.story-content h3 {
+  font-weight: 700;
+  font-size: 1.5rem;
+}
+.story-content a:hover {
+  font-weight: bold;
+  transition: font 100ms linear 100ms;
+}
+@media only screen and (max-width: 600px) {
   .news-banner .left {
     display: none;
+    position: absolute;
   }
   .news-banner .right {
     width: 100%;
