@@ -5,10 +5,10 @@
     <title>Colmar Academy</title>
     <link rel="stylesheet" href="./resources/css/reset.css" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Heebo:300,400,700,800" rel="stylesheet">
-    <link rel="stylesheet" href="./resources/css/webfonts/fontawesome.min.css" type="stylesheet">
+    <link rel="stylesheet" href="/resources/css/fontawesome-all.css" type="stylesheet">
     <link rel="stylesheet" href="./resources/css/style.css" type="text/css">
     <link rel="icon" href="./favicon.ico" type="image/x-icon">
-
+  </head>
   <body>
     <!--Header-->
     <header>
@@ -21,8 +21,8 @@
               <h3>Academy</h3>
             </div>
           </div>
-          <nav class="nav">
-            <ul>
+          <nav>
+            <ul role="presentation">
               <li><a href="#">On Campus</a></li>
               <li><a href="#">Online</a></li>
               <li><a href="#">For Companies</a></li>
@@ -35,7 +35,7 @@
         <a href="#"><img src="./resources/images/ic-logo.svg" alt="logo"></a>
         <a href="#"><img src="./resources/images/ic-on-campus.svg" alt="desk"></a>
         <a href="#"><img src="./resources/images/ic-online.svg" alt="computer"></a>
-        <i class="fa fa-users"></i>
+        <a href="#"><i class="fas fa-user-alt"></i></a>
       </div>
     </header>
     <!--Top Banner-->
@@ -62,7 +62,12 @@
       </div>
       <div class="right">
         <div class="story">
-          <img src="./resources/images/information-orientation.jpg" alt="students walking">
+          <div class="desktop-image">
+            <img src="./resources/images/information-orientation.jpg" alt="students walking">
+          </div>
+          <div class="mobile-image">
+            <img src="./resources/images/information-orientation-mobile.jpg" alt="students walking">
+          </div>
           <div class="story-content">
             <h3>Orientation date</h3>
             <span>Tue 10/11 & Wed 10/12: 8 am-3pm</span>
@@ -70,7 +75,12 @@
           </div>
         </div>
         <div class="story">
-          <img src="./resources/images/information-campus.jpg" alt="students">
+          <div class="desktop-image">
+            <img src="./resources/images/information-campus.jpg" alt="students">
+          </div>
+          <div class="mobile-image">
+            <img src="./resources/images/information-campus-mobile.jpg" alt="students">
+          </div>
           <div class="story-content">
             <h3>Our campus</h3>
             <span>Find which campus is close by you</span>
@@ -78,7 +88,12 @@
           </div>
         </div>
         <div class="story">
-          <img src="./resources/images/information-guest-lecture.jpg" alt="guest lecturer">
+          <div class="desktop-image">
+            <img src="./resources/images/information-guest-lecture.jpg" alt="guest lecturer">
+          </div>
+          <div class="mobile-image">
+            <img src="./resources/images/information-guest-lecture-mobile.jpg" alt="guest lecturer">
+          </div>
           <div class="story-content">
             <h3>Our guest lecture</h3>
             <span>Join a keynote with Oliver Sack about music in medical treatment</span>
@@ -177,7 +192,7 @@
     <footer>
       <span>&copy 2016 Colmar Academy. All rights reserved</span>
       <nav>
-        <ul>
+        <ul role="presentation">
           <li><a href="#">Terms</a></li>
           <li><a href="#">Privacy</a></li>
         </ul>

@@ -42,19 +42,19 @@ header .content {
 .logo-name h3:last-child {
   color: #a6a6a6;
 }
-.nav {
+nav {
   margin: 1rem 1.5rem;
 }
-.nav ul {
+nav ul {
   display: flex;
   margin: auto 8px;
 }
-.nav a {
+nav a {
   padding-left: 1rem;
   color: #4d4d4d;
   text-decoration: none;
 }
-.nav a:hover {
+nav a:hover {
   font-weight: bold;
   transition: font 100ms linear 100ms;
 }
@@ -189,15 +189,19 @@ header .content {
   border-bottom: solid lightgrey 1px;
   padding: 16px;
   line-height: 1.2;
+  justify-content: space-between;
 }
 .right .story:last-child {
   background-color: lightgrey;
   margin-bottom: 32px;
 }
-.right .story img {
-  max-width: 35%;
+.story .desktop-image img {
+  width: 35%;
   height: auto;
-  margin: 16px;
+  padding: 16px;
+}
+.story .mobile-image {
+  display: none;
 }
 .story-content {
   max-width: 65%;
@@ -214,17 +218,23 @@ header .content {
 @media only screen and (max-width: 600px) {
   .news-banner .left {
     display: none;
-    position: absolute;
   }
   .news-banner .right {
-    width: 100%;
+    max-width: 100%;
+    display: block;
+    height: auto;
   }
   .right .story{
-    width: 90%;
+    width: 100%;
     flex-direction: column;
   }
-  .story img {
+  .story .mobile-image {
     padding: 16px;
+    justify-content: center;
+    display: contents;
+  }
+  .story .desktop-image {
+    display: none;
   }
   .story-content h3, span{
 
