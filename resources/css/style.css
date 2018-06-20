@@ -297,9 +297,33 @@ nav a:hover {
   color: grey;
   font-weight: lighter;
 }
-@media screen only and (max-width: 600px) {
+@media only screen and (max-width: 600px) {
+  .course-banner {
+
+  }
+  .course-banner h1 {
+    padding: 32px;
+  }
+  .courses {
+    flex-direction: column;
+    align-items: center;
+  }
+  .course {
+    background-color: #D3D3D3;
+    width: 80%;
+    margin: .5rem;
+  }
+  .course:last-child {
+    margin-bottom: 32px;
+  }
   .course img {
     display: none;
+  }
+  .course-content h4 {
+    display: none;
+  }
+  .course-content h3 {
+    font-weight: 400;
   }
 }
 
@@ -368,6 +392,21 @@ nav a:hover {
   font-size: 1.2rem;
   font-weight: 100;
   padding-top: 1rem;
+}
+@media only screen and (max-width: 600px) {
+  .thesis-left {
+    width: 100%;
+  }
+  .thesis-left h2, h4 {
+    display: none;
+  }
+  .thesis-left video {
+    width: 100%;
+    padding: 8px 0;
+  }
+  .thesis-right {
+    display: none;
+  }
 }
 
 /*Footer*/
