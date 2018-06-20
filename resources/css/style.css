@@ -67,7 +67,6 @@ nav a:hover {
     align-items: center;
     width: 100%;
   }
-
   header .desktop {
     display: none;
   }
@@ -145,6 +144,7 @@ nav a:hover {
     font-size: 1.5rem;
   }
 }
+
 /*News Banner*/
 .news-banner {
   margin-top: 32px;
@@ -183,6 +183,7 @@ nav a:hover {
   max-width: 35%;
   height: 750px;
   border-left: solid lightgrey 1px;
+  padding-top: 16px;
 }
 .right .story {
   display: flex;
@@ -195,16 +196,18 @@ nav a:hover {
   background-color: lightgrey;
   margin-bottom: 32px;
 }
-.story .desktop-image img {
+.story .desktop-image {
   width: 35%;
+}
+.story .desktop-image img {
+  width: 100%;
   height: auto;
-  padding: 16px;
 }
 .story .mobile-image {
   display: none;
 }
 .story-content {
-  max-width: 65%;
+  max-width: 60%;
   margin: auto 0;
 }
 .story-content h3 {
@@ -227,17 +230,30 @@ nav a:hover {
   .right .story{
     width: 100%;
     flex-direction: column;
+    padding: 16px;
+    align-content: center;
   }
   .story .mobile-image {
-    padding: 16px;
-    justify-content: center;
     display: contents;
+  }
+  .story .mobile-image img {
+    width: 90%;
   }
   .story .desktop-image {
     display: none;
   }
-  .story-content h3, span{
-
+  .story-content {
+    padding: 16px;
+  }
+  .story-content h3{
+    font-weight: 500;
+    padding-bottom: 16px;
+  }
+  .story-content span {
+    font-weight: 100;
+    font-size: .9rem;
+    line-height: 1.8;
+    display: block;
   }
 }
 
@@ -280,7 +296,11 @@ nav a:hover {
   font-size: 1.25rem;
   color: grey;
   font-weight: lighter;
-
+}
+@media screen only and (max-width: 600px) {
+  .course img {
+    display: none;
+  }
 }
 
 /*Thesis section*/
