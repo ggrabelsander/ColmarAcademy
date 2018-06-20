@@ -427,5 +427,12 @@ nav a {
 }
 nav a:hover {
   font-weight: bold;
-
+}
+@media only screen and (max-width: 600px) {
+  footer {
+    width: 100%;
+  }
+  footer nav {
+    display: none;
+  }
 }
